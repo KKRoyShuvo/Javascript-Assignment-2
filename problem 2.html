@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 2</title>
+  </head>
+  <body>
+    <script>
+      let a = parseFloat(
+        prompt(
+          "Enter one number for factorial : (any number which is positive or negative or 0)"
+        )
+      );
+      var total = 1;
+      if (a < 0) {
+        if (a % 2 == -1) {
+          console.log("+(plus)infinite.");
+        } else {
+          console.log("-(minus)infinite.");
+        }
+      } else if (a >= 0) {
+        if (a == 0) {
+          console.log("The factorial is  : 1");
+        } else {
+          for (var i = a; i > 0; i--) {
+            total = total * i;
+          }
+          console.log("The factorial is :  ", total);
+          alert(total);
+        }
+      }
+    </script>
+    <p
+      style="
+        text-align: center;
+        font-size: 150%;
+        color: coral;
+        font-family: Bebas Neue;
+      "
+    >
+      <b>
+        Problem 2 : Write a JavaScript code that takes user input (use prompt
+        and typecasting) and calculates the factorial of a number using a loop
+        in JavaScript.
+      </b>
+    </p>
+  </body>
+</html>

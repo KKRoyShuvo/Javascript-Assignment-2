@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 1</title>
+  </head>
+  <body>
+    <script>
+      let a = parseFloat(prompt("Enter a number for multiplication table : "));
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 0; j < 10; j++) {
+          var mul = a * i;
+          console.log(a + "*" + i + "=" + mul);
+        }
+      }
+    </script>
+
+    <p
+      style="
+        text-align: center;
+        font-size: 150%;
+        color: coral;
+        font-family: Bebas Neue;
+      "
+    >
+      <b>
+        Problem 1: Write a JavaScript code that generates a multiplication table
+        for the user inserted number (use prompt and typecasting) using a loop
+        in JavaScript.
+      </b>
+    </p>
+  </body>
+</html>

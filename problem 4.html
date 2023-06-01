@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 4</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Enter your name:");
+      var Length = name.length;
+      var lowCount = 0;
+      var upperCount = 0;
+      for (var i = 0; i < Length; i++) {
+        var letter = name.charAt(i);
+        if (letter >= "a" && letter <= "z") {
+          lowCount++;
+        }
+        if (letter >= "A" && letter <= "Z") {
+          upperCount++;
+        }
+      }
+      console.log("Name Length: " + Length);
+      console.log("Lowercase Letters Count: " + lowCount);
+      console.log("Uppercase Letters Count: " + upperCount);
+    </script>
+    <p
+      style="
+        text-align: center;
+        color: coral;
+        font-size: 150%;
+        font-family: Bebas Neue;
+      "
+    >
+      <b
+        >Problem 5: Write a JavaScript code to print all even numbers from 1 to
+        a given number 'n' using a loop in JavaScript.</b
+      >
+    </p>
+  </body>
+</html>
